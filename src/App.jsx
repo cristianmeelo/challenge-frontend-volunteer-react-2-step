@@ -12,14 +12,16 @@ const App = () => {
   useEffect(() => {
     fetch('https://picsum.photos/v2/list')
       .then((res) => res.json())
-      .then((data) => setImages(data));
+      .then((data) => setImages(data))
   }, []);
 
   const openModal = (image) => setSelectedImage(image);
   const closeModal = () => setSelectedImage(null);
 
-  const addFavorite = (image) => {
-    setFavorites([...favorites, image]);
+  const handleFavorite = (image) => {
+    setFavorites((prevFavorites) =>
+      prevFavorites.includes(image) ? prevFavorites : [...prevFavorites, image]
+    );
   };
 
   const filteredImages = images.filter((image) =>
@@ -33,7 +35,7 @@ const App = () => {
         <h1 className="text-lg">
           Source of visual resources from the internet.
         </h1>
-        <p className="text-lg pb-8">Provided by picsum API.</p>
+        <p className="text-lg pb-8">Provided by Picsum API.</p>
         <SearchInput
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
@@ -41,18 +43,18 @@ const App = () => {
         />
       </div>
 
-      <div className="flex flex-col pt-32">
-        {filteredImages.map((image) => (
-          <ImageDisplay
-            key={image.id}
-            image={image}
-            onFavorite={addFavorite}
-            onClick={openModal}
-          />
-        ))}
+      <div className="pt-32">
+        <ImageDisplay
+          images={filteredImages}
+          onFavorite={handleFavorite}
+          onClick={openModal}
+          favorites={favorites}
+        />
       </div>
 
-      <ImageModal image={selectedImage} onClose={closeModal} />
+      {selectedImage && (
+        <ImageModal image={selectedImage} onClose={closeModal} />
+      )}
     </main>
   );
 };
