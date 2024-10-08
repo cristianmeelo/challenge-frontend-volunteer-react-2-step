@@ -1,17 +1,17 @@
-// src/App.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+
 import ImageDisplay from './components/ImageDisplay';
 import ImageModal from './components/ImageModal';
 import SearchInput from './components/SearchInput';
-import { useSelector } from 'react-redux';
 
 const App = () => {
   const [images, setImages] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedImage, setSelectedImage] = useState(null);
-  const [showFavorites, setShowFavorites] = useState(false); // Estado para controlar a exibição dos favoritos
+  const [showFavorites, setShowFavorites] = useState(false);
 
-  const favorites = useSelector((state) => state.favorites); // Seleciona os favoritos do Redux
+  const favorites = useSelector((state) => state.favorites);
 
   useEffect(() => {
     fetch('https://picsum.photos/v2/list')

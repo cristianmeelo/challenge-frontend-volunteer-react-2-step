@@ -1,24 +1,21 @@
-import React from 'react';
-
-// Componente Modal para exibir detalhes da imagem
 const ImageModal = ({ image, onClose }) => {
-  if (!image) return null; // Retorna null se não houver imagem selecionada
+  if (!image) return null;
 
   return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center">
-      <div className="bg-white p-6 rounded shadow-lg">
-        <h2 className="text-2xl mb-4">{image.author}</h2>
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full transition-transform transform scale-100 opacity-100">
+        <h2 className="text-2xl font-semibold mb-4">{image.author}</h2>
         <img
           src={image.download_url}
           alt={image.author}
-          className="w-full h-auto mb-4"
+          className="w-full h-auto rounded-lg mb-4"
         />
-        <p>
+        <p className="text-gray-600">
           Dimensões: {image.width} x {image.height}
         </p>
         <button
-          className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
-          onClick={onClose} // Fecha o modal
+          className="mt-6 bg-gray-500 text-white px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-gray-600"
+          onClick={onClose}
         >
           Fechar
         </button>
