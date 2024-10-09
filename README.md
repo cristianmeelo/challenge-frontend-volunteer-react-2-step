@@ -22,7 +22,7 @@
 Um teste técnico no processo seletivo frontend fusion que visa conseguir um cargo de voluntário, sendo o desafio desenvolver uma apresentação sobre mim.
 
 <div align="center">
-<a href="https://cristian-melo-developer.vercel.app/">
+<a href="https://challenge-frontend-volunteer-react-gallery.vercel.app/">
   <img src="https://img.shields.io/badge/-CONFIRA%20AQUI-lightblue" alt="Image App" >
 </a>
 </div>
