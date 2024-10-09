@@ -1,102 +1,77 @@
-# Desafio de Galeria de Imagens - Processo Seletivo Frontend Fusion
+<table align="right">
+  <tr>
+    <td>
+      <a href="README-EN.md">🇺🇸 English (apenas no GitHub)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="README.md">🇧🇷 Português</a>
+    </td>
+  </tr>
+</table>
 
-> OBS : Você receberá um e-mail com a data de início dos desafios, mas eles já estão disponíveis para acesso imediato.
-> Se ainda não preencheu o formulário, por favor, acesse o link para completá-lo.
-> [Forms de inscrição](https://forms.gle/EJKDNKdmVZM3zQTr7)
-> é importante está inscrito no formulário , pois o seu email precisa ser validado
+![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react/blob/master/thumbnail.png?raw=true)
 
-## Sobre o Desafio
+![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react/blob/master/thumbnail-mockup.png?raw=true#vitrinedev)
 
-Bem-vindo ao desafio de galeria de imagens do processo seletivo do projeto Frontend Fusion para a vaga de Desenvolvedor React Júnior. Este desafio foi criado para avaliar suas habilidades em desenvolvimento com React e sua capacidade de criar uma aplicação de galeria de imagens. 📸
+<br/>
 
-## Objetivo
+# Presentation
 
-Crie uma aplicação de galeria de imagens utilizando React e a API [Picsum Photos](https://picsum.photos/v2/list). Esta aplicação deve incluir:
+Um teste técnico no processo seletivo frontend fusion que visa conseguir um cargo de voluntário, sendo o desafio desenvolver uma apresentação sobre mim.
 
-- Visualização de imagens obtidas da API [Picsum Photos](https://picsum.photos/v2/list).
-- Funcionalidade para salvar imagens nos favoritos. 💾
+<div align="center">
+<a href="https://cristian-melo-developer.vercel.app/">
+  <img src="https://img.shields.io/badge/-CONFIRA%20AQUI-lightblue" alt="Image App" >
+</a>
+</div>
 
-funcionalidade opcional:
+## 🔨 Recursos do projeto
 
-- Opção de aplicar filtros para visualizar imagens por categoria, cor, etc. 🎨
+Este desafio foi criado para avaliar as habilidades em desenvolvimento com React e a capacidade de criar uma página de apresentação pessoal. Aqui estão os recursos adaptados:
 
-- Ao clicar em uma imagem, exibir informações detalhadas como autor, dimensões, e qualquer outra propriedade relevante disponível na API. 🖼️
-
-## Diferenciais
+- Seu nome
+- Uma breve descrição sobre você
+- Suas habilidades
+- Seus projetos recentes
+- Links para suas redes sociais (LinkedIn, GitHub, etc.)
 
 Para se destacar, recomendamos implementar os seguintes diferenciais:
 
-- **Tailwind CSS:** Utilize Tailwind CSS para estilizar sua aplicação. 🎨
-- **Gerenciadores de Estado:** Utilize gerenciadores de estado como Redux ou Context API para gerenciar o estado da aplicação. 📊
-- **Responsividade:** Certifique-se de que sua aplicação seja totalmente responsiva e funcione bem em diferentes dispositivos. 📱💻
-- **Boas Práticas de Código:** Siga boas práticas de código, como organização de arquivos, componentes reutilizáveis, e uso adequado de hooks. 🧩
-- **Acessibilidade:** Implemente boas práticas de acessibilidade para garantir que sua aplicação possa ser utilizada por todos. ♿
-- **SEO:** Otimize sua aplicação para motores de busca. 🌐
-- **Animações e Transições:** Adicione animações e transições para melhorar a experiência do usuário. 🎞️
-- **Testes:** Escreva testes para seus componentes utilizando frameworks como Jest e React Testing Library. 🧪
+- Tailwind CSS: Utilize Tailwind CSS para estilizar sua página.
+- Gerenciadores de Estado: Utilize gerenciadores de estado como Redux ou Context API para gerenciar o estado da aplicação.
+- Responsividade: Certifique-se de que sua página seja totalmente responsiva e funcione bem em diferentes dispositivos.
+- Boas Práticas de Código: Siga boas práticas de código, como organização de arquivos, componentes reutilizáveis e uso adequado de - hooks.
+- Acessibilidade: Implemente boas práticas de acessibilidade para garantir que sua página possa ser utilizada por todos.
+- Animações e Transições: Adicione animações e transições para melhorar a experiência do usuário.
+- Commits Semânticos: Utilize commits semânticos para manter um histórico de commits claro e organizado.
 
-## Entrega
+## ⚙️ Técnicas e tecnologias usadas
 
-Faça o deploy da sua aplicação em plataformas como GitHub Pages, Heroku, Vercel, Netlify, ou qualquer outra de sua preferência. Após concluir o desafio, envie o link do deploy e do repositório do código-fonte por e-mail para **projetofrontendfusion@gmail.com**. O e-mail deve incluir:
+Confira essa lista de tudo que vamos usar nesse app:
 
-- Nome
-- Link do GitHub
-- Link do LinkedIn
-- Data de Início
-- Data de Entrega
-- Link do GitHub com o Código
-- Link do Deploy
-- Link da Postagem no LinkedIn mostrando os desafios concluídos
+- `Vite`
+- `TypeScript`
+- `TailwindCSS`
+- `React Audio Player`
+- `React Icons`
+- `Vercel Deployment`
+- `GitHub`
 
-**Observação:** É obrigatório entregar todos os três desafios em até **20 dias** após o início. Este é o **Desafio 02 de 03 desafios**. ⏳
+## 🛠️ Abra e execute o projeto
 
-## Prazo
+Para abrir e executar o projeto, execute `npm i` para instalar as dependências e `npm run dev` para iniciar o projeto.
 
-Você tem 20 dias para concluir todos os três desafios. 📅
+Em seguida, vá para <a href="http://localhost:5173/">http://localhost:5173/</a> em seu navegador.
 
-## Avaliação
+## 📚 Mais informações do tutorial
 
-Os critérios de avaliação incluirão:
+Uma parte curiosa da etapa de desenvolvimento foi que o arquivo de áudio foi gerado no [google notebooklm](https://notebooklm.google/), trata-se de umm assistente de pesquisa de IA personalizado, desenvolvido com o modelo mais avançado do Google, o Gemini 1.5 Pro. Nos serviços oferecidos pelo NotebookLM, você pode carregar seu currículo e pedir para a IA gerar um arquivo de áudio, criando esse formato de discussão/podcast. Achei sensacional, e funciona para qualquer arquivo ou assunto de interesse. Para inspiração do design, encontrei e adaptei do [figma](<https://www.figma.com/design/4W0YDUCUlYutYHjagjHCe7/Portfolio-Frontend-Minimal-(Community)?node-id=0-1&node-type=canvas&t=AvTyiEplOSUmG5SA-0>) a arte de Marcos Oliveira. A descrição completa dos requisitos/desafio pode ser encontrada [aqui](https://github.com/Projeto-FrontEnd-Fusion/.apresentacao-pessoal-frontend).
 
-- Funcionalidade
-- Qualidade do código
-- Uso dos diferenciais mencionados
-- Estética e design
-- Responsividade
-- Acessibilidade
-
-## Como Participar
-
-1. Faça um fork deste repositório. 🍴
-2. Crie um branch com seu nome: nome-sobrenome.
-3. Após completar o desafio, envie o link do deploy, o repositório do código-fonte e o link da postagem no LinkedIn por e-mail para **projetofrontendfusion@gmail.com** com o assunto: **"Entrega + Desafios[02] + Seu Nome"**. 📧
-
-## Exemplo de E-mail:
-
-**Assunto:** Entrega + Desafios[02] + João Silva
-
----
-
-Olá,
-
-Segue abaixo a entrega do Desafio 02 para o processo seletivo do Frontend Fusion.
-
-**Nome:** João Silva  
-**Link do GitHub:** [https://github.com/joaosilva](https://github.com/joaosilva)  
-**Link do LinkedIn:** [https://linkedin.com/in/joaosilva](https://linkedin.com/in/joaosilva)  
-**Data de Início:** 01/09/2024  
-**Data de Entrega:** 20/09/2024  
-**Link do GitHub com o Código:** [https://github.com/joaosilva/desafio02](https://github.com/joaosilva/desafio02)  
-**Link do Deploy:** [https://joaosilva.netlify.app](https://joaosilva.netlify.app)  
-**Link da Postagem no LinkedIn:** [https://linkedin.com/posts/joaosilva/desafio-02](https://linkedin.com/posts/joaosilva/desafio-02)
-
-Agradeço a oportunidade e estou à disposição para qualquer dúvida.
-
-Atenciosamente,  
-João Silva
-
----
-
-Boa sorte e estamos ansiosos para ver seu trabalho! 🚀
-
-Este desafio faz parte do processo seletivo do projeto Frontend Fusion para a vaga de Desenvolvedor React Júnior.
+| :placard: Vitrine.Dev |                                                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| :sparkles: Nome       | **Presentation**                                                                                                   |
+| :label: Tecnologias   | Vite, Typescript, TailwindCSS, React Audio Player, React Icons, Vercel Deployment, GitHub (tecnologias utilizadas) |
+| :rocket: URL          | https://cristian-melo-developer.vercel.app/                                                                        |
+| :fire: Desafio        | https://github.com/Projeto-FrontEnd-Fusion/.apresentacao-pessoal-frontend                                          |
