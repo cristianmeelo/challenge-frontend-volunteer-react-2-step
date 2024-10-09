@@ -1,9 +1,12 @@
+// src/store/index.js
 import { configureStore } from '@reduxjs/toolkit';
-import favoritesReducer from './features';
+import favoritesReducer from './features/favorites';
+import filterReducer from './features/filter';
 
 const store = configureStore({
   reducer: {
     favorites: favoritesReducer,
+    filter: filterReducer,
   },
 });
 

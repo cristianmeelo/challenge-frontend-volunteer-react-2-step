@@ -1,3 +1,4 @@
+import Button from '../Button';
 const ImageModal = ({ image, onClose }) => {
   if (!image) return null;
 
@@ -10,15 +11,12 @@ const ImageModal = ({ image, onClose }) => {
           alt={image.author}
           className="w-full h-auto rounded-lg mb-4"
         />
-        <p className="text-gray-600">
+        <p className="text-gray-600 text-sm">
           Dimensões: {image.width} x {image.height}
         </p>
-        <button
-          className="mt-6 bg-gray-500 text-white px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-gray-600"
-          onClick={onClose}
-        >
-          Fechar
-        </button>
+        <div className="flex justify-end">
+          <Button onClick={onClose}>Fechar</Button>
+        </div>
       </div>
     </div>
   );
