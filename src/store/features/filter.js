@@ -3,32 +3,26 @@ import { createSlice } from '@reduxjs/toolkit';
 const filterSlice = createSlice({
   name: 'filter',
   initialState: {
-    category: '',
-    color: '',
+    author: '', // Adicione esta linha para armazenar o autor
   },
   reducers: {
-    setCategory: (state, action) => {
-      state.category = action.payload;
-    },
-    setColor: (state, action) => {
-      state.color = action.payload;
+    setAuthor: (state, action) => {
+      state.author = action.payload; // Adiciona a lógica para alterar o autor
     },
     resetFilters: (state) => {
-      state.category = '';
-      state.color = '';
+      state.author = ''; // Reseta o autor
     },
   },
 });
 
 export const filterImages = (images, filters) => {
   return images.filter((image) => {
-    const matchesCategory = filters.category
-      ? image.category === filters.category
+    const matchesAuthor = filters.author
+      ? image.author === filters.author
       : true;
-    const matchesColor = filters.color ? image.color === filters.color : true;
-    return matchesCategory && matchesColor;
+    return matchesAuthor;
   });
 };
 
-export const { setCategory, setColor, resetFilters } = filterSlice.actions;
+export const { setAuthor, resetFilters } = filterSlice.actions;
 export default filterSlice.reducer;

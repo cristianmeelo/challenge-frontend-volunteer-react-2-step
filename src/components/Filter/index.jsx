@@ -1,21 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  setCategory,
-  setColor,
-  resetFilters,
-} from '../../store/features/filter';
+import { resetFilters, setAuthor } from '../../store/features/filter';
 import Button from '../Button';
 
-const Filter = () => {
+const Filter = ({ handleShowFavorites, showFavorites, authors }) => {
   const dispatch = useDispatch();
-  const { category, color } = useSelector((state) => state.filter);
+  const { author } = useSelector((state) => state.filter);
 
-  const handleCategoryChange = (event) => {
-    dispatch(setCategory(event.target.value));
-  };
-
-  const handleColorChange = (event) => {
-    dispatch(setColor(event.target.value));
+  const handleAuthorChange = (event) => {
+    dispatch(setAuthor(event.target.value)); // Use a ação setAuthor
   };
 
   const handleResetFilters = () => {
@@ -23,45 +15,35 @@ const Filter = () => {
   };
 
   return (
-    <div className="flex pt-8 space-x-4">
-      <div>
-        <label htmlFor="category" className="block">
-          Category:
+    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 align-center">
+      <div className="flex-1">
+        <label htmlFor="author" className="block mb-2 font-semibold">
+          Author:
         </label>
         <select
-          id="category"
-          value={category}
-          onChange={handleCategoryChange}
-          className="border rounded p-2"
+          id="author"
+          value={author}
+          onChange={handleAuthorChange}
+          className="border rounded p-2 w-full"
+          aria-label="Select Author"
         >
-          <option value="">Select Category</option>
-          <option value="nature">Nature</option>
-          <option value="animals">Animals</option>
-          <option value="technology">Technology</option>
-          <option value="people">People</option>
+          <option value="">Select Author</option>
+          {authors.map((authorName, index) => (
+            <option key={index} value={authorName}>
+              {authorName}
+            </option>
+          ))}
         </select>
       </div>
 
-      <div>
-        <label htmlFor="color" className="block">
-          Color:
-        </label>
-        <select
-          id="color"
-          value={color}
-          onChange={handleColorChange}
-          className="border rounded p-2"
-        >
-          <option value="">Select Color</option>
-          <option value="red">Red</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-        </select>
+      <div className="flex space-x-2">
+        <Button onClick={handleResetFilters} disabled={!author}>
+          Reset Filters
+        </Button>
+        <Button onClick={handleShowFavorites}>
+          {showFavorites ? 'See all' : '🖤 See favorites'}
+        </Button>
       </div>
-
-      <Button onClick={handleResetFilters} disabled={!category && !color}>
-        Reset Filters
-      </Button>
     </div>
   );
 };

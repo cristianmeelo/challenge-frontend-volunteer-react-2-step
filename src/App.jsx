@@ -3,42 +3,24 @@ import { useSelector } from 'react-redux';
 import { filterImages } from './store/features/filter';
 import ImageDisplay from './components/ImageDisplay';
 import ImageModal from './components/ImageModal';
-import SearchInput from './components/SearchInput';
 import Filter from './components/Filter';
 import Button from './components/Button';
 
 const App = () => {
   const [images, setImages] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
   const [selectedImage, setSelectedImage] = useState(null);
   const [showFavorites, setShowFavorites] = useState(false);
   const favorites = useSelector((state) => state.favorites);
-  const { category, color } = useSelector((state) => state.filter);
+  const { author } = useSelector((state) => state.filter);
 
   useEffect(() => {
     fetch('https://picsum.photos/v2/list')
       .then((res) => res.json())
       .then((data) => {
-        const modifiedData = data.map((image) => {
-          let category = 'nature';
-          let color = 'green';
-
-          if (image.author.includes('Paul Jarvis')) {
-            category = 'technology';
-            color = 'blue';
-          } else if (image.author.includes('Alejandro Escamilla')) {
-            category = 'nature';
-            color = 'green';
-          } else if (image.author.includes('Vadim Sherbakov')) {
-            category = 'animals';
-            color = 'red';
-          }
-          return {
-            ...image,
-            category,
-            color,
-          };
-        });
+        const modifiedData = data.map((image) => ({
+          ...image,
+          author: image.author,
+        }));
         setImages(modifiedData);
       })
       .catch((err) => console.error('Failed to fetch images', err));
@@ -47,34 +29,33 @@ const App = () => {
   const openModal = (image) => setSelectedImage(image);
   const closeModal = () => setSelectedImage(null);
 
+  // Filtrar imagens baseado no autor
   const filteredImages = filterImages(showFavorites ? favorites : images, {
-    category,
-    color,
+    author,
   });
 
   const handleShowFavorites = () => {
     setShowFavorites(!showFavorites);
   };
 
+  // Extrair autores únicos da lista de imagens
+  const uniqueAuthors = [...new Set(images.map((image) => image.author))];
+
   return (
     <main className="px-4 md:px-20 lg:px-32 xl:px-80">
-      <div className="pt-16 md:pt-32 w-full md:w-2/3 mx-auto">
+      <div className="pt-16 md:pt-32 w-full mx-auto">
         <span className="text-3xl md:text-4xl font-bold">Faksplash</span>
         <h1 className="text-md md:text-lg">
           Source of visual resources from the internet.
         </h1>
         <p className="text-md md:text-lg pb-8">Provided by Picsum API.</p>
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-2">
-          <SearchInput
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-            placeholder="Search..."
+          <Filter
+            handleShowFavorites={handleShowFavorites}
+            showFavorites={showFavorites}
+            authors={uniqueAuthors} 
           />
-          <Button onClick={handleShowFavorites}>
-            {showFavorites ? 'See all' : '🖤 See fav'}
-          </Button>
         </div>
-        <Filter />
       </div>
 
       <div className="pt-16 md:pt-32">
