@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+
 import { filterImages } from './store/features/filter';
 import ImageDisplay from './components/ImageDisplay';
 import ImageModal from './components/ImageModal';
 import Filter from './components/Filter';
-import Button from './components/Button';
+import Footer from './components/Footer';
 
 const App = () => {
   const [images, setImages] = useState([]);
@@ -29,7 +30,6 @@ const App = () => {
   const openModal = (image) => setSelectedImage(image);
   const closeModal = () => setSelectedImage(null);
 
-  // Filtrar imagens baseado no autor
   const filteredImages = filterImages(showFavorites ? favorites : images, {
     author,
   });
@@ -38,7 +38,6 @@ const App = () => {
     setShowFavorites(!showFavorites);
   };
 
-  // Extrair autores únicos da lista de imagens
   const uniqueAuthors = [...new Set(images.map((image) => image.author))];
 
   return (
@@ -53,7 +52,7 @@ const App = () => {
           <Filter
             handleShowFavorites={handleShowFavorites}
             showFavorites={showFavorites}
-            authors={uniqueAuthors} 
+            authors={uniqueAuthors}
           />
         </div>
       </div>
@@ -65,6 +64,7 @@ const App = () => {
       {selectedImage && (
         <ImageModal image={selectedImage} onClose={closeModal} />
       )}
+      <Footer />
     </main>
   );
 };

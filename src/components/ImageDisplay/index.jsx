@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { addFavorite, removeFavorite } from '../../store/features/favorites';
 
 const ImageDisplay = ({ images, onClick }) => {

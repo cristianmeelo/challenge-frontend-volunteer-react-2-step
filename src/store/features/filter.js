@@ -3,14 +3,14 @@ import { createSlice } from '@reduxjs/toolkit';
 const filterSlice = createSlice({
   name: 'filter',
   initialState: {
-    author: '', // Adicione esta linha para armazenar o autor
+    author: '', 
   },
   reducers: {
     setAuthor: (state, action) => {
-      state.author = action.payload; // Adiciona a lógica para alterar o autor
+      state.author = action.payload;
     },
     resetFilters: (state) => {
-      state.author = ''; // Reseta o autor
+      state.author = '';
     },
   },
 });

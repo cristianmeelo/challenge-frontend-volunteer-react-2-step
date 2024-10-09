@@ -1,4 +1,3 @@
-// src/store/index.js
 import { configureStore } from '@reduxjs/toolkit';
 import favoritesReducer from './features/favorites';
 import filterReducer from './features/filter';

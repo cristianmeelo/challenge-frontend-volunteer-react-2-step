@@ -7,7 +7,7 @@ const Filter = ({ handleShowFavorites, showFavorites, authors }) => {
   const { author } = useSelector((state) => state.filter);
 
   const handleAuthorChange = (event) => {
-    dispatch(setAuthor(event.target.value)); // Use a ação setAuthor
+    dispatch(setAuthor(event.target.value)); 
   };
 
   const handleResetFilters = () => {
