@@ -11,7 +11,7 @@
   </tr>
 </table>
 
-![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react-2-step/blob/master/thumbnail.png?raw=true)
+![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react-2-step/blob/master/thumbnail-en.png?raw=true)
 
 ![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react-2-step/blob/master/thumbnail-mockup.png?raw=true#vitrinedev)
 
