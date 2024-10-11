@@ -11,15 +11,15 @@
   </tr>
 </table>
 
-![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react/blob/master/thumbnail.png?raw=true)
+![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react-2-step/blob/master/thumbnail.png?raw=true)
 
-![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react/blob/master/thumbnail-mockup.png?raw=true#vitrinedev)
+![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react-2-step/blob/master/thumbnail-mockup.png?raw=true#vitrinedev)
 
 <br/>
 
-# Presentation
+# Faksplah
 
-Um teste técnico no processo seletivo frontend fusion que visa conseguir um cargo de voluntário, sendo o desafio desenvolver uma apresentação sobre mim.
+Um teste técnico no processo seletivo frontend fusion que visa conseguir um cargo de voluntário, sendo o desafio a elaboração de um galeria de imagens.
 
 <div align="center">
 <a href="https://challenge-frontend-volunteer-react-gallery.vercel.app/">
@@ -29,32 +29,30 @@ Um teste técnico no processo seletivo frontend fusion que visa conseguir um car
 
 ## 🔨 Recursos do projeto
 
-Este desafio foi criado para avaliar as habilidades em desenvolvimento com React e a capacidade de criar uma página de apresentação pessoal. Aqui estão os recursos adaptados:
+Este desafio foi criado para avaliar as habilidades em desenvolvimento com React e a capacidade de criar uma página de apresentar uma galeria de imagens. As funcionalidades são apresentados abaixo:
 
-- Seu nome
-- Uma breve descrição sobre você
-- Suas habilidades
-- Seus projetos recentes
-- Links para suas redes sociais (LinkedIn, GitHub, etc.)
+- Visualização de imagens obtidas da API [Picsum Photos](https://picsum.photos/).
+- Funcionalidade para salvar imagens nos favoritos. 💾
 
-Para se destacar, recomendamos implementar os seguintes diferenciais:
+Para se destacar, foi recomendado implementar os seguintes diferenciais:
 
-- Tailwind CSS: Utilize Tailwind CSS para estilizar sua página.
-- Gerenciadores de Estado: Utilize gerenciadores de estado como Redux ou Context API para gerenciar o estado da aplicação.
-- Responsividade: Certifique-se de que sua página seja totalmente responsiva e funcione bem em diferentes dispositivos.
-- Boas Práticas de Código: Siga boas práticas de código, como organização de arquivos, componentes reutilizáveis e uso adequado de - hooks.
-- Acessibilidade: Implemente boas práticas de acessibilidade para garantir que sua página possa ser utilizada por todos.
-- Animações e Transições: Adicione animações e transições para melhorar a experiência do usuário.
-- Commits Semânticos: Utilize commits semânticos para manter um histórico de commits claro e organizado.
+- Tailwind CSS: Utilize Tailwind CSS para estilizar sua aplicação. 🎨
+- Gerenciadores de Estado: Utilize gerenciadores de estado como Redux ou Context API para gerenciar o estado da aplicação. 📊
+- Responsividade: Certifique-se de que sua aplicação seja totalmente responsiva e funcione bem em diferentes dispositivos. 📱💻
+- Boas Práticas de Código: Siga boas práticas de código, como organização de arquivos, componentes reutilizáveis, e uso adequado de hooks. 🧩
+- Acessibilidade: Implemente boas práticas de acessibilidade para garantir que sua aplicação possa ser utilizada por todes. ♿
+- SEO: Otimize sua aplicação para motores de busca. 🌐
+- Animações e Transições: Adicione animações e transições para melhorar a experiência do usuário. 🎞️
+- Testes: Escreva testes para seus componentes utilizando frameworks como Jest e React Testing Library. 🧪
 
 ## ⚙️ Técnicas e tecnologias usadas
 
 Confira essa lista de tudo que vamos usar nesse app:
 
 - `Vite`
-- `TypeScript`
+- `JavaScript`
 - `TailwindCSS`
-- `React Audio Player`
+- `Redux`
 - `React Icons`
 - `Vercel Deployment`
 - `GitHub`
@@ -67,11 +65,12 @@ Em seguida, vá para <a href="http://localhost:5173/">http://localhost:5173/</a>
 
 ## 📚 Mais informações do tutorial
 
-Uma parte curiosa da etapa de desenvolvimento foi que o arquivo de áudio foi gerado no [google notebooklm](https://notebooklm.google/), trata-se de umm assistente de pesquisa de IA personalizado, desenvolvido com o modelo mais avançado do Google, o Gemini 1.5 Pro. Nos serviços oferecidos pelo NotebookLM, você pode carregar seu currículo e pedir para a IA gerar um arquivo de áudio, criando esse formato de discussão/podcast. Achei sensacional, e funciona para qualquer arquivo ou assunto de interesse. Para inspiração do design, encontrei e adaptei do [figma](<https://www.figma.com/design/4W0YDUCUlYutYHjagjHCe7/Portfolio-Frontend-Minimal-(Community)?node-id=0-1&node-type=canvas&t=AvTyiEplOSUmG5SA-0>) a arte de Marcos Oliveira. A descrição completa dos requisitos/desafio pode ser encontrada [aqui](https://github.com/Projeto-FrontEnd-Fusion/.apresentacao-pessoal-frontend).
+O nome "Faksplah" é uma brincadeira com o site [Unsplash](https://unsplash.com/pt-br), que oferece uma excelente galeria de imagens. Embora o projeto ainda não esteja no mesmo nível, é um grande passo em direção a praticar as tarefas básicas do dia a dia de um desenvolvedor frontend.
+
 
 | :placard: Vitrine.Dev |                                                                                                                    |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| :sparkles: Nome       | **Presentation**                                                                                                   |
-| :label: Tecnologias   | Vite, Typescript, TailwindCSS, React Audio Player, React Icons, Vercel Deployment, GitHub (tecnologias utilizadas) |
-| :rocket: URL          | https://cristian-melo-developer.vercel.app/                                                                        |
-| :fire: Desafio        | https://github.com/Projeto-FrontEnd-Fusion/.apresentacao-pessoal-frontend                                          |
+| :sparkles: Nome       | **Faksplah**                                                                                                   |
+| :label: Tecnologias   | Vite, Javascript, TailwindCSS, Redux, React Icons, Vercel Deployment, GitHub (tecnologias utilizadas) |
+| :rocket: URL          | https://challenge-frontend-volunteer-react-gallery.vercel.app/                                                                        |
+| :fire: Desafio        | https://github.com/Projeto-FrontEnd-Fusion/desafio-galeria-de-imagem-frontendfusion                                          |

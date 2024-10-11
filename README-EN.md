@@ -11,9 +11,9 @@
   </tr>
 </table>
 
-![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react/blob/master/thumbnail.png?raw=true)
+![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react-2-step/blob/master/thumbnail.png?raw=true)
 
-![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react/blob/master/thumbnail-mockup.png?raw=true#vitrinedev)
+![](https://github.com/cristianmeelo/challenge-frontend-volunteer-react-2-step/blob/master/thumbnail-mockup.png?raw=true#vitrinedev)
 
 <div align="center">
 <a href="https://challenge-frontend-volunteer-react-gallery.vercel.app/">
@@ -24,38 +24,36 @@
 
 <br/>
 
-# Presentation
+# Faksplash
 
 A technical test in the frontend fusion selection process that aims to obtain a volunteer position, with the challenge being to develop a presentation about myself.
 
 ## 🔨 Project features
 
-This challenge was created to assess developing React skills and the ability to create a personal presentation page. Here are the adapted features:
+This challenge was created to assess development skills with React and the ability to create a page featuring an image gallery. The features are presented below:
 
-- Your name
-- A brief description about you
-- Your skills
-- Your recent projects
-- Links to your social networks (LinkedIn, GitHub, etc.)
+- Viewing images obtained from the API [Picsum Photos](https://picsum.photos/).
+- Functionality to save images to favorites. 💾
 
-To stand out, we recommend implementing the following differentiators:
+To stand out, it was recommended to implement the following differences:
 
-- Tailwind CSS: Use Tailwind CSS to style your page.
-- State Managers: Use state managers such as Redux or Context API to manage the application state.
-- Responsiveness: Make sure your page is fully responsive and works well on different devices.
-- Good Code Practices: Follow good code practices, such as file organization, reusable components and proper use of - hooks.
-- Accessibility: Implement good accessibility practices to ensure that your page can be used by everyone.
-- Animations and Transitions: Add animations and transitions to improve user experience.
-- Semantic Commits: Use semantic commits to maintain a clear and organized commit history.
+- Tailwind CSS: Use Tailwind CSS to style your application. 🎨
+- State Managers: Use state managers such as Redux or Context API to manage the application state. 📊
+- Responsiveness: Make sure your application is fully responsive and works well on different devices. 📱💻
+- Good Code Practices: Follow good code practices, such as file organization, reusable components, and proper use of hooks. 🧩
+- Accessibility: Implement good accessibility practices to ensure that your application can be used by everyone. ♿
+- SEO: Optimize your application for search engines. 🌐
+- Animations and Transitions: Add animations and transitions to improve user experience. 🎞️
+- Tests: Write tests for your components using frameworks such as Jest and React Testing Library. 🧪
 
 ## ⚙️ Techniques and technologies used
 
 Check out this list of everything we will use in this app:
 
 - `Vite`
-- `TypeScript`
+- `Javascript`
 - `TailwindCSS`
-- `React Audio Player`
+- `Redux`
 - `React Icons`
 - `Vercel Deployment`
 - `GitHub`
@@ -68,11 +66,11 @@ Then go to <a href="http://localhost:5173/">http://localhost:5173/</a> in your b
 
 ## 📚 More tutorial information
 
-A curious part of the development stage was that the audio file was generated in [google notebooklm](https://notebooklm.google/), it is a personalized AI research assistant, developed with the most advanced model of Google, Gemini 1.5 Pro. In the services offered by NotebookLM, you can upload your resume and ask the AI ​​to generate an audio file, creating this discussion/podcast format. I thought it was sensational, and it works for any file or subject of interest. For design inspiration, I found and adapted from [figma](https://www.figma.com/design/4W0YDUCUlYutYHjagjHCe7/Portfolio-Frontend-Minimal-(Community)?node-id=0-1&node-type=canvas&t=AvTyiEplOSUmG5SA -0) the art of Marcos Oliveira. The full description of the requirements/challenge can be found [here](https://github.com/Projeto-FrontEnd-Fusion/.seguracao-pessoal-frontend).
+The name "Faksplah" is a play on the website [Unsplash](https://unsplash.com/pt-br), which offers an excellent gallery of images. Although the project is not yet at the same level, it is a big step towards practicing the basic day-to-day tasks of a frontend developer.
 
-| :placard: Vitrine.Dev |                                                                                                                |
-| --------------------- | -------------------------------------------------------------------------------------------------------------- |
-| :sparkles: Name       | **Presentation**                                                                                               |
-| :label: Technologies  | Vite, Typescript, TailwindCSS, React Audio Player, React Icons, Vercel Deployment, GitHub ( used Technologies) |
-| :rocket: URL          | https://cristian-melo-developer.vercel.app/                                                                    |
-| :fire: Challenge      | https://github.com/Projeto-FrontEnd-Fusion/.apresentacao-pessoal-frontend                                      |
+| :placard: Vitrine.Dev |                                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------- |
+| :sparkles: Name       | **Faksplash**                                                                                     |
+| :label: Technologies  | Vite, Javascript, TailwindCSS, Redux, React Icons, Vercel Deployment, GitHub ( used Technologies) |
+| :rocket: URL          | https://challenge-frontend-volunteer-react-gallery.vercel.app/                                    |
+| :fire: Challenge      | https://github.com/Projeto-FrontEnd-Fusion/desafio-galeria-de-imagem-frontendfusion               |
